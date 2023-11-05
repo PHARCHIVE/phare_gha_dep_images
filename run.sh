@@ -29,4 +29,3 @@ git clone https://github.com/PHAREHUB/PHARE -b master --depth 1 --recursive --sh
 
 rm -rf phare
 apt-get autoclean
-apt-get autoremove
