@@ -9,6 +9,5 @@ ENV OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
 # https://github.com/open-mpi/ompi/issues/4948#issuecomment-395468231
 # ENV OMPI_MCA_btl_vader_single_copy_mechanism=none
 
-WORKDIR /root
 COPY run.sh /root
-RUN chmod +x run.sh && ./run.sh
+RUN chmod +x /root/run.sh && /root/run.sh && useradd -ms /bin/bash runner
